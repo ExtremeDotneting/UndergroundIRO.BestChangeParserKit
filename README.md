@@ -1,4 +1,4 @@
-# BestChangeParserKit - simple parser for https://www.bestchange.ru exchangers catalog
+# UndergroundIRO.BestChangeParserKit - simple parser for https://www.bestchange.ru exchangers catalog
 
 Powered by HtmlAgilityPack.
 
