@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace BestChangeParserKit
+namespace UndergroundIRO.BestChangeParserKit
 {
     public interface ICaptchaHandler
     {

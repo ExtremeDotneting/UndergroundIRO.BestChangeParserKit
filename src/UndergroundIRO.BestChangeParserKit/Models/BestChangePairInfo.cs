@@ -1,4 +1,4 @@
-﻿namespace BestChangeParserKit.Models
+﻿namespace UndergroundIRO.BestChangeParserKit.Models
 {
     public struct BestChangePairInfo
     {

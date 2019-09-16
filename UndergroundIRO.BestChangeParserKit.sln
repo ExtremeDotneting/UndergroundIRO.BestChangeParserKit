@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UndergroundIRO.BestChangeParserKit", "src\UndergroundIRO.BestChangeParserKit\UndergroundIRO.BestChangeParserKit.csproj", "{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndergroundIRO.Tests.BestChangeParserKitTest", "tests\UndergroundIRO.Tests.BestChangeParserKitTest\UndergroundIRO.Tests.BestChangeParserKitTest.csproj", "{75AC8949-F5D9-4193-8675-2271E7A98EE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Debug|x86.ActiveCfg = Debug|x86
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Debug|x86.Build.0 = Debug|x86
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Release|x86.ActiveCfg = Release|x86
+		{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}.Release|x86.Build.0 = Release|x86
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Debug|x86.ActiveCfg = Debug|x86
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Debug|x86.Build.0 = Debug|x86
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Release|x86.ActiveCfg = Release|x86
+		{75AC8949-F5D9-4193-8675-2271E7A98EE0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30C8B35A-7AD3-4513-92ED-CB4C4068DB68}
+	EndGlobalSection
+EndGlobal

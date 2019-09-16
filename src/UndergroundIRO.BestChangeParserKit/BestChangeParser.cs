@@ -1,25 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using BestChangeParserKit.Exceptions;
-using BestChangeParserKit.Models;
 using HtmlAgilityPack;
 using Newtonsoft.Json;
+using UndergroundIRO.BestChangeParserKit.Exceptions;
+using UndergroundIRO.BestChangeParserKit.Models;
 
-namespace BestChangeParserKit
+namespace UndergroundIRO.BestChangeParserKit
 {
     public class BestChangeParser
     {
-        readonly HttpClient _httpClient;
+        readonly IHttpService _httpService;
 
         readonly ICaptchaHandler _captchaHandler;
 
-        public BestChangeParser(HttpClient httpClient, ICaptchaHandler captchaHandler = null)
+        public BestChangeParser(IHttpService httpService=null, ICaptchaHandler captchaHandler = null)
         {
-            _httpClient = httpClient;
+            _httpService = httpService ?? new HttpService();
             _captchaHandler = captchaHandler;
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
         }
@@ -81,15 +80,9 @@ namespace BestChangeParserKit
 
         async Task<string> LoadHtml(string url, int tryesLeft = 3)
         {
-            var resp = await _httpClient.SendAsync(
-                    new HttpRequestMessage(
-                        HttpMethod.Get,
-                        url
-                    )
-                );
-            var responseArr = await resp.Content.ReadAsByteArrayAsync();
-            Encoding windows1251 = Encoding.GetEncoding(1251);
-            var html = windows1251.GetString(responseArr, 0, responseArr.Length - 1);
+            var windows1251 = Encoding.GetEncoding(1251);
+            var html = await _httpService.GetAsync(url, windows1251);
+
             if (html.Contains("Parsing is prohibited"))
             {
                 var captchaHandled = false;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace BestChangeParserKit.Exceptions
+namespace UndergroundIRO.BestChangeParserKit.Exceptions
 {
     public class BestChangeParserException : Exception
     {
