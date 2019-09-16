@@ -20,12 +20,9 @@ namespace UndergroundIRO.Tests.BestChangeParserKitTest
     {
         static void Main(string[] args)
         {
-            Task.Run(async () =>
-            {
-                InitializeCefSharp();
-                XWebViewThreadSync.Init(new CefSharpThreadSyncInvoker());
-                
-            });
+            AppDomain.CurrentDomain.AssemblyResolve += Resolver;
+            InitializeCefSharp();
+            XWebViewThreadSync.Init(new CefSharpThreadSyncInvoker());
             var cmds = new CmdSwitcher();
             cmds.PushCmdInStack(new TestCmdLine());
             cmds.ExecuteStartup(args);
@@ -43,6 +40,7 @@ namespace UndergroundIRO.Tests.BestChangeParserKitTest
             );
             CefHelpers.AddDefaultSettings(settings);
             settings.RemoteDebuggingPort = 9222;
+            settings.LogSeverity = LogSeverity.Disable;
             Cef.Initialize(settings, false, browserProcessHandler: null);
         }
 
