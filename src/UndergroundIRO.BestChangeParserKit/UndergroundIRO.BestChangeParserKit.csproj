@@ -8,6 +8,7 @@
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.9" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" />
+    <PackageReference Include="UndergroundIRO.ParseKit" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>

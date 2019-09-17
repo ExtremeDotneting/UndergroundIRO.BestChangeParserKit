@@ -69,7 +69,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCmdLine.cs" />
-    <Compile Include="XWebViewHttpService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -79,6 +78,20 @@
       <Project>{8EC9F77B-1F5C-4E71-8EEC-EB337295DE26}</Project>
       <Name>UndergroundIRO.BestChangeParserKit</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CefSharp.OffScreen">
+      <Version>75.1.142</Version>
+    </PackageReference>
+    <PackageReference Include="IRO.CmdLine">
+      <Version>2.0.12</Version>
+    </PackageReference>
+    <PackageReference Include="IRO.XWebView.CefSharp.OffScreen">
+      <Version>1.1.4</Version>
+    </PackageReference>
+    <PackageReference Include="UndergroundIRO.ParseKit">
+      <Version>1.0.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,7 @@ using HtmlAgilityPack;
 using Newtonsoft.Json;
 using UndergroundIRO.BestChangeParserKit.Exceptions;
 using UndergroundIRO.BestChangeParserKit.Models;
+using UndergroundIRO.ParseKit.Network;
 
 namespace UndergroundIRO.BestChangeParserKit
 {

@@ -7,6 +7,7 @@ using IRO.XWebView.Core;
 using IRO.XWebView.Core.Consts;
 using Newtonsoft.Json;
 using UndergroundIRO.BestChangeParserKit;
+using UndergroundIRO.ParseKit.Network;
 
 namespace UndergroundIRO.Tests.BestChangeParserKitTest
 {
