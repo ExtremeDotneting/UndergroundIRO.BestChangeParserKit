@@ -81,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CefSharp.OffScreen">
-      <Version>75.1.142</Version>
+      <Version>98.1.210</Version>
     </PackageReference>
     <PackageReference Include="IRO.CmdLine">
       <Version>2.0.12</Version>
